@@ -111,9 +111,7 @@ address {
 
 .container-solutions {
     background: #2e2f42; padding: 188px 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    display: block;
     font: 700 56px / 1.07143 var(--font-family);
     letter-spacing: 0.02em;
     text-align: center;
@@ -127,7 +125,11 @@ address {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin-bottom: 48px;}
+    margin-bottom: 48px;
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+}
 
 .button {
     background: #4d5ae5;
@@ -169,7 +171,7 @@ button:focus {
     gap: 8px;
     width: calc((100% - 72px) / 4);}
 
- <!--section-our-team-->   
+  
 
  .container-our-team {
     background: #f4f4fd; 
@@ -237,12 +239,13 @@ button:focus {
      
 
 .container-footer {
-    background: #2e2f42;}
-
-.info-footer {display: block;
+    background: #2e2f42;
+    display: block;
     padding-top: 100px;
     padding-left: 156px;
     padding-bottom: 100px;}
+
+
 
 .logo-footer {
     display: inline-block;
