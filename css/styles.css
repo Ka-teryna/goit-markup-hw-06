@@ -241,9 +241,7 @@ button:focus {
 .container-footer {
     background: #2e2f42;
     display: block;
-    padding-top: 100px;
-    padding-left: 156px;
-    padding-bottom: 100px;}
+    padding: 100px 0;}
 
 
 
@@ -265,6 +263,8 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;}    
+    max-width: 264px;}  
+    
+vds {visu}
 
 
