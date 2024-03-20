@@ -87,7 +87,25 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-    display: block;}
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.current {
+    position: relative;
+    color: #404BBF;
+
+}
+
+.current::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: "";
+    border-radius: 2px;
+    background-color: #404BBF;
+    height: 4px;
+    width: 100%;
+}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -98,7 +116,8 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;}
+    color: #434455;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);}
 
 address {
     font-style: normal; margin-left: auto;}
@@ -115,7 +134,16 @@ address {
     font: 700 56px / 1.07143 var(--font-family);
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--white);}
+    color: var(--white);
+    background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/hero-image.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  
+  }
 
 .title {
     font-weight: 700;
@@ -147,11 +175,13 @@ address {
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border: none;
-    margin: auto;}
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 button:hover, 
 button:focus {
-    background: #404bbf;}
+    background: #404bbf;
+    background-color: #31d0aa;}
 
 
 
@@ -170,6 +200,22 @@ button:focus {
     flex-direction: column;
     gap: 8px;
     width: calc((100% - 72px) / 4);}
+    
+.icon-container-advantages {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+     display: flex;
+     gap: 24px;
+  justify-content: center;
+  align-items: center;
+     margin-bottom: 8px;
+    }
+
+.icon-advantages {
+   }
 
   
 
@@ -190,7 +236,9 @@ button:focus {
 
 .list-our-team {
     display:flex;
-    gap: 24px;}
+    gap: 24px;
+    
+}
 
 .li-card {
     display: block;
@@ -202,14 +250,52 @@ button:focus {
     padding: 0px 0px 0px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: white;
-    width: calc((100% - 72px) / 4);}
+    width: calc((100% - 72px) / 4);
+}
 
 .info-team {
   text-align: center;
   gap: 8px;
-  padding: 32px 0;}
+  padding: 32px 0;
+  
+}
+
+.icon-container-team {
+    padding: 32px 0;
+
+}
+
+.list-icon-team {
+    display: flex;
+    justify-content: center; 
+    gap: 24px;
+
+}
+
+
+
+.icon-team {
+    display: flex;
+    fill: #f4f4fd;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+
+.icon-team-use {
+ width: 100%;
+ 
 
  
+ 
+}
+
+.icon-team:hover, .icon-team:focus {background-color: #31d0aa ;}
 
 .container-portfolio {
     padding: 120px 0;}
@@ -221,7 +307,38 @@ button:focus {
     row-gap: 48px;}
 
 .li-portfolio {
-    width: calc((100% - 48px) / 3)}
+    width: calc((100% - 48px) / 3);
+    position: relative;}
+
+.picture {position: relative;
+overflow: hidden;}
+
+.overley {
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    width: 100%;
+    height: 100%;
+    background: #4d5ae5;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: box-shadow transform 250ms ecubic-bezier(0.4, 0, 0.2, 1);
+   
+
+}
+
+.li-portfolio:hover .overley {
+    transform: translateY(0);
+     box-shadow: 0 2px 1px 0 rgba(77, 90, 229, 0.1);
+}
 
 .info-portfolio {
     display: flex;
@@ -239,9 +356,23 @@ button:focus {
      
 
 .container-footer {
-    background: #2e2f42;
-    display: block;
-    padding: 100px 0;}
+   background: #2e2f42;
+    padding: 0 15px;
+    
+}
+
+.container-footer-left {
+     margin-right: 120px;
+
+}
+
+.container-footer-all {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 120px;
+    padding-bottom: 100px;
+    
+}
 
 
 
@@ -263,7 +394,35 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;}  
+    max-width: 264px;} 
+
+.container-media {
+    display: block;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.icon-container-footer {
+    display: flex;
+}
+
+.container-media-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    
+}
+
+.text-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+margin-bottom: 16px;}
+    
     
 .visually-hidden {
   position: absolute;
