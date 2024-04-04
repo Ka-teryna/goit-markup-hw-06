@@ -526,7 +526,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .form {
     font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2e2f42;}
 
 .container-label {
