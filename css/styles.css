@@ -577,6 +577,7 @@ letter-spacing: 0.02em;
 }
 
 .foot-social-text {
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.02em;
@@ -620,7 +621,7 @@ letter-spacing: 0.02em;
 .foot-form-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 400;
@@ -661,7 +662,6 @@ letter-spacing: 0.02em;
     gap: 72px 24px;
     flex-wrap: wrap;
     padding-left: 108px;
-
   }
 
   .foot-left,
@@ -680,10 +680,6 @@ letter-spacing: 0.02em;
     padding-bottom: 16px;
   }
 
-  .foot-text {
-    
-  }
-
   .foot-right {
     align-items: flex-start;
     padding: 0;
@@ -697,11 +693,35 @@ letter-spacing: 0.02em;
   .foot-form {
     flex-direction: row;
     gap: 24px;
-  
   }
 
+  .foot-form-input {
+    width: 264px;
+    }
 
-
-
-  
   }
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .foot-container {
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    gap: 0;
+  }
+
+  .foot-left {
+    margin-right: 120px;
+  }
+
+  .foot-text {
+    width: 264px;
+  }
+
+  .foot-subscribe {
+    margin-left: 80px;
+  }
+
+}
