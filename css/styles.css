@@ -736,9 +736,6 @@ max-width: 216px;
 /* SECTION PORTFOLIO */
 
 
-.pf-name {
-}
-
 .portfolio-list {
   display: flex;
   flex-direction: column;
@@ -1243,9 +1240,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #F4F4FD;
 }
 
-.check-text {
-
-}
 
 .modal-link {
   line-height: 1.33;
