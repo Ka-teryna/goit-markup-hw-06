@@ -664,6 +664,9 @@ max-width: 216px;
 .team-title {
   text-align: center;
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .team-text {
